@@ -1,37 +1,20 @@
-#service:
-#- docker
+language: java
+jdk: oraclejdk8
+
+addons:
+  apt:
+    packages:
+    - bash
+
+install: true
+script: bash mvnw >/dev/null
 
 env:
   global:
   - TERM=dumb
+  - secure: b6EcHOw7W1SIKjGwuOAVDbrxs9zBX3ES7VJY7ulYcvaDqWnuep7XTdOdLrtUxNBpiGsYOK7wjgEjfkzVXNBLmSX2OFavBj/9khFz6ew2BqCYmRvOAeBH8S0tKke7wdLG3fctDptjsl3qmKnPk9jPd+LmI2s+5oYfbWsJZB7IYnyWp7lB4CYJ4U6zcwhwPBxe0YJo6BvPoabpaERFcSVT19HssKXn44O5qulk39tIuOtPPOSiRkdkzJg7xyCsOl83lRuSCpsWfaML8+kBj7oWurbYFFCv8YAPCwA7Dmq1i3C4PrYbCCrBra36l8mqnmJRbc3EMcG/VdRlzzm5CysU7aXMV9dC4N0BQK6/LQpo5uzLViVOKgaLoyE1WMrXHGWoDt+F2836h0+fxvzk/pf6+rzPgZsS6Bzr2qwuLsRSAQdxjyUvJv1wgQDqNkuOQvPX4BSQQoQjqm7mbVHzyYBj9gSpYvZ9MxkpeWl26tXVkqssjhEagkYWLzprW1eeKlaxp42HIiHFCqtG1/C9AJHGoxTI0vthPWBYdxW7bHMgFbkq7UaNbWBHPcd7IVS7vncUFpfB88tuCaavESsFhqqffyLV9N3ArI19eBDWmvr/q4JjvXb6Y9/ybhNXA0oL680rP5xg2R73n/j3EYyyjy8nAr6EjxREkiPAoLw+WAX8QtA=
 
-language: java
-jdk: oraclejdk8
-
-#addons:
-#  apt:
-#    update: true
-#    packages:
-#    - sudo
-#    - lsof
-#    - bash
-#    - unzip
-#    - curl
-#    - jq
-#    - libxml2-utils
-#    - docker-ce
-#    - python-pip
-
-install: true
-#before_script:
-#- sudo pip install docker-compose httpie >/dev/null 2>&1
-#- source <(curl -s https://raw.githubusercontent.com/daggerok/bash-functions/master/main.bash)
-
-script:
-- bash mvnw >/dev/null
-- bash gradlew >/dev/null
-
-before_deploy: ./gradlew documentation
+before_deploy: ./mvnw
 
 deploy:
   provider: pages
@@ -44,11 +27,6 @@ deploy:
   local-dir: target/generated-docs
   target_branch: gh-pages
 
-before_cache:
-- bash -c 'for item in $(find ~/.gradle -name "*.lock"); do sudo rm -rf $item ; done'
-
 cache:
   directories:
   - $HOME/.m2
-  - $HOME/.gradle
-  - $HOME/.docker
