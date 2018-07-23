@@ -9,7 +9,7 @@
 <preface>
 <title></title>
 <simpara>Maksim Kostromin &lt;<link xl:href="mailto:daggerok@gmail.com">daggerok@gmail.com</link>&gt;
-2018-07-23 18:22:33 UTC
+2018-07-23 18:58:11 UTC
 :doctype: book
 :toc: left
 :toclevels: 4
@@ -52,7 +52,7 @@ tree ./dist
 <informalfigure>
 <mediaobject>
 <imageobject>
-<imagedata fileref="images/images/01-start-app.png"/>
+<imagedata fileref="./images/01-start-app.png"/>
 </imageobject>
 <textobject><phrase>01 start app</phrase></textobject>
 </mediaobject>
@@ -64,7 +64,7 @@ tree ./dist
 <informalfigure>
 <mediaobject>
 <imageobject>
-<imagedata fileref="images/images/02-edit-run-cinfigurations-dialog.png"/>
+<imagedata fileref="./images/02-edit-run-cinfigurations-dialog.png"/>
 </imageobject>
 <textobject><phrase>02 edit run cinfigurations dialog</phrase></textobject>
 </mediaobject>
@@ -72,7 +72,7 @@ tree ./dist
 <informalfigure>
 <mediaobject>
 <imageobject>
-<imagedata fileref="images/images/03-new-run-configuration.png"/>
+<imagedata fileref="./images/03-new-run-configuration.png"/>
 </imageobject>
 <textobject><phrase>03 new run configuration</phrase></textobject>
 </mediaobject>
@@ -80,7 +80,7 @@ tree ./dist
 <informalfigure>
 <mediaobject>
 <imageobject>
-<imagedata fileref="images/images/04-debug-config.png"/>
+<imagedata fileref="./images/04-debug-config.png"/>
 </imageobject>
 <textobject><phrase>04 debug config</phrase></textobject>
 </mediaobject>
@@ -93,7 +93,7 @@ tree ./dist
 <informalfigure>
 <mediaobject>
 <imageobject>
-<imagedata fileref="images/images/05-create-breakpoint.png"/>
+<imagedata fileref="./images/05-create-breakpoint.png"/>
 </imageobject>
 <textobject><phrase>05 create breakpoint</phrase></textobject>
 </mediaobject>
@@ -102,7 +102,7 @@ tree ./dist
 <informalfigure>
 <mediaobject>
 <imageobject>
-<imagedata fileref="images/images/06-run-debug.png"/>
+<imagedata fileref="./images/06-run-debug.png"/>
 </imageobject>
 <textobject><phrase>06 run debug</phrase></textobject>
 </mediaobject>
@@ -111,7 +111,7 @@ tree ./dist
 <informalfigure>
 <mediaobject>
 <imageobject>
-<imagedata fileref="images/images/07-see-results.png"/>
+<imagedata fileref="./images/07-see-results.png"/>
 </imageobject>
 <textobject><phrase>07 see results</phrase></textobject>
 </mediaobject>
