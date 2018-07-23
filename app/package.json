@@ -1,0 +1,25 @@
+{
+  "homepage": "https://daggerok.github.io/javascript-debug-in-webstorm/",
+  "name": "javascript-app",
+  "version": "0.0.1",
+  "description": "JS App",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "clean": "rimraf -rf .cache dist",
+    "prebuild": "npm run clean",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "Maksim Kostromin <daggerok@gmail.com> (https://github.com/daggerok)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-env": "1.7.0",
+    "babel-preset-stage-0": "6.24.1",
+    "parcel-bundler": "1.9.7",
+    "rimraf": "2.6.2"
+  },
+  "dependencies": {
+    "css-reset-and-normalize-sass": "0.1.2"
+  }
+}
