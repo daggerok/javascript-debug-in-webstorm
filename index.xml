@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
+<info>
+<title>javascript-debug-in-webstorm (0.0.1)</title>
+<date>2018-07-23</date>
+</info>
+<preface>
+<title></title>
+<simpara>Maksim Kostromin &lt;<link xl:href="mailto:daggerok@gmail.com">daggerok@gmail.com</link>&gt;
+2018-07-23 18:18:16 UTC
+:doctype: book
+:toc: left
+:toclevels: 4
+:numbered:
+:icons: font
+:hide-uri-scheme:
+:revnumber: 0.0.1
+:example-caption!:
+:source-highlighter: highlightjs</simpara>
+<simpara>Travis CI status:
+<inlinemediaobject>
+<imageobject>
+<imagedata fileref="https://travis-ci.org/daggerok/javascript-debug-in-webstorm.svg?branch=master"/>
+</imageobject>
+<textobject><phrase>Build Status</phrase></textobject>
+</inlinemediaobject></simpara>
+</preface>
+<chapter xml:id="important-build-app-with-source-maps">
+<title>Important: build app with source maps</title>
+<programlisting language="bash" linenumbering="unnumbered">npm run build
+
+tree ./dist
+./dist
+├── favicon.e4aa46cb.ico
+├── flavored-reset-and-normalize.d19f0e53.css
+├── flavored-reset-and-normalize.d19f0e53.js
+├── flavored-reset-and-normalize.d19f0e53.map
+├── index.html
+├── main.5d6e19d1.js
+├── main.5d6e19d1.map
+├── style.76f7c99d.css
+├── style.76f7c99d.js
+└── style.76f7c99d.map
+
+0 directories, 10 files</programlisting>
+</chapter>
+<chapter xml:id="run-app-to-be-able-debugger-connect-to-it-remotely">
+<title>Run app to be able debugger connect to it remotely</title>
+<simpara>I&#8217;m using parcel, and running my app on port 1234</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/images/01-start-app.png"/>
+</imageobject>
+<textobject><phrase>01 start app</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>You can also simply use npm start from console&#8230;&#8203;</simpara>
+</chapter>
+<chapter xml:id="create-javascript-debug-configuration">
+<title>Create JavaScript debug configuration</title>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/images/02-edit-run-cinfigurations-dialog.png"/>
+</imageobject>
+<textobject><phrase>02 edit run cinfigurations dialog</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/images/03-new-run-configuration.png"/>
+</imageobject>
+<textobject><phrase>03 new run configuration</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/images/04-debug-config.png"/>
+</imageobject>
+<textobject><phrase>04 debug config</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>and click OK</simpara>
+</chapter>
+<chapter xml:id="debugging">
+<title>Debugging</title>
+<simpara>create a breakpoint somewhere in source code</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/images/05-create-breakpoint.png"/>
+</imageobject>
+<textobject><phrase>05 create breakpoint</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>run debug</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/images/06-run-debug.png"/>
+</imageobject>
+<textobject><phrase>06 run debug</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>and open according page in browser to si if you can debug you app</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/images/07-see-results.png"/>
+</imageobject>
+<textobject><phrase>07 see results</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</chapter>
+</book>
